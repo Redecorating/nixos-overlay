@@ -9,7 +9,7 @@
   boot.kernelParams = [ "intel_iommu=on" "apple_bce.aaudio_enabled=0" ];
 
   # Use custom kernel
-  boot.kernelPackages = pkgs.linuxPackagesFor pkgs.linux-mbp;
+  #boot.kernelPackages = pkgs.linuxPackagesFor pkgs.linux-mbp;
   boot.extraModulePackages = with pkgs; [ apple-bce apple-ib-drv ];
 
   # Load Apple hardware modules early
